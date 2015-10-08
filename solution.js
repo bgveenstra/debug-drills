@@ -30,8 +30,9 @@ $(document).ready(function(){
 
 		// fix - move count=0 outside the loop so we don't reset it over and over!
 		var count = 0;
-		for (var i = 0; i < 10; i++){
-			
+		for (var i = 0; i < input.lenth; i++){
+			// this loop doesn't find both es in  "supercalifragilisticexpialidocious"
+			// fix - change the continue condition (above) to stop at input.length
 			if (input[i] === "e"){
 				count = count +1;
 			}
